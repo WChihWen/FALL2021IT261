@@ -48,9 +48,14 @@
       <h3>Week 2:</h3>
       <ul>         
          <li><a href="https://docs.google.com/document/d/18Pd7WKsm8putC0T0yO_cFMjQu7xcIIvALLY5HNNOyXU/edit" target="_blank">MAMP Notes</a></li>
-         <li><a href="index.php" >index.php</a></li>
-         <li><a href="weeks/week2/test_mamp.php" >test_mamp.php</a></li>
+         <li><a href="weeks/week2/test_mamp.php" target="_blank">test_mamp.php</a></li>
+         <li><a href="weeks/week2/var.php" target="_blank">var.php</a></li>
+         <li><a href="weeks/week2/var2.php" target="_blank">var2.php</a></li>
+         <li><a href="weeks/week2/currency-logic.php" target="_blank">currency-logic.php</a></li>
+         <li><a href="weeks/week2/currency.php" target="_blank">currency.php</a></li>
+         <li><a href="weeks/week2/heredoc.php" target="_blank">heredoc.php</a></li>
       </ul>
+      
       <h3>Week 3:</h3>
       <h3>Week 4:</h3>
       <h3>Week 5:</h3>
