@@ -1,0 +1,40 @@
+<?php 
+// the if statement
+//LOGIC - if the temp is less than 90 degrees, all is well. else, its going to be a cooker.
+
+$tmp = 90;
+if( $tmp < 90 ){
+    echo 'not that hot';
+}else{
+    echo 'It\'s a scorcher';
+}
+
+echo '<br>';
+// we are goint extend the is statement, with an ifelse statement
+
+$tmp =76;
+if($tmp <= 76){
+    echo 'It is liveable';
+}elseif($tmp <= 85) {
+    echo 'It\'s getting hotter';
+}else{
+    echo 'It\'s really hot';
+}
+
+echo '<br>';
+// fun with logic
+// if my sales are over 800000, I will make 10% bonus of my base salary
+// if my sales are greater or equal to 600000, I will make a bonus of my base salary.
+
+
+$sales = 800000;
+$salary = 200000;
+if($sales >= 800000){
+    $salary *= 1.10;    
+}elseif($sales >= 600000) {
+    $salary *= 1.05;  
+}else{
+    $salary *= 1;
+}
+echo 'Salary:$'.$salary;
+?>

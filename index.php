@@ -24,23 +24,19 @@
       </div>
       <div id="tabs-2">
          <div>
-            <h1>Screenshot of displaying MAMP</h1>
+            <h2>Screenshot of displaying MAMP</h2>
             <img src="images/MAMP.png" alt="MAMP" /> 
             <br><br>
-            <h1>Screenshot of the error page</h1>
+            <h2>Screenshot of the error page</h2>
             <img src="images/errorpage.png" alt="errorpage" />             
          </div>  
-      </div>
-      
+      </div>      
    </div>
-
-   
-         
-   </section>
+</section>
    <aside>
       
 
-      <h1>Weekly Assignments</h1>
+      <h2>Weekly Assignments</h2>
       <h3>Week 1:</h3>
       <ul>         
          <li><a href="https://github.com/WChihWen/FALL2021IT261" target="_blank">GitHub</a></li>
@@ -54,9 +50,15 @@
          <li><a href="weeks/week2/currency-logic.php" target="_blank">currency-logic.php</a></li>
          <li><a href="weeks/week2/currency.php" target="_blank">currency.php</a></li>
          <li><a href="weeks/week2/heredoc.php" target="_blank">heredoc.php</a></li>
-      </ul>
-      
+      </ul>      
       <h3>Week 3:</h3>
+      <ul>
+         <li><a href="weeks/week3/if.php" target="_blank">if.php</a></li>
+         <li><a href="weeks/week3/date.php" target="_blank">date.php</a></li>
+         <li><a href="weeks/week3/foreach.php" target="_blank">foreach.php</a></li>
+         <li><a href="weeks/week3/forloop.php" target="_blank">forloop.php</a></li>         
+         <li><a href="weeks/week3/switch.php" target="_blank">switch.php</a></li>         
+      </ul>
       <h3>Week 4:</h3>
       <h3>Week 5:</h3>
       <h3>Week 6:</h3>

@@ -8,7 +8,7 @@ Used to store all of our WEB120 configuration information
 $nav1['index.php'] = "Home";
 //$nav1['galleries.php'] = "Galleries";
 
-$nav1['#Switch'] = "Switch";
+$nav1['website/daily.php'] = "Switch";
 $nav1['#Troubleshoot'] = "Troubleshoot";
 $nav1['#Calculator'] = "Calculator";
 $nav1['#Email'] = "Email";
