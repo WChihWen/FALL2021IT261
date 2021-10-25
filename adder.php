@@ -5,8 +5,32 @@
 <meta charset="UTF-8">
 <title>My Adder Assignment</title>
 <style>
+    * {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    }
+
+    form{
+        width:400px;
+        margin:0 auto;
+    }
+
+    fieldset{
+        border:1px solid red;
+        padding: 12px;
+    }
+    h1 {
+        text-align: center;
+        color:red;
+        font-style: italic;
+    }
+    h2,p{        
+        text-align: center;
+        }
     h3{
-            color:red;
+        color:red;
+        text-align: center;
         }
 </style>
 </head>
@@ -14,11 +38,13 @@
 <body>
     <h1>Adder.php</h1> 
     <form action="" method="post"> 
-        <label>Enter the first number:</label>
-        <input type="number" name="num1"><br>
-        <label>Enter the second number:</label>
-        <input type="number" name="num2"><br>
-        <input type="submit" value="Add Em!!"> 
+        <fieldset>
+            <label>Enter the first number:</label>
+            <input type="number" name="num1"><br>
+            <label>Enter the second number:</label>
+            <input type="number" name="num2"><br>
+            <input type="submit" value="Add Em!!"> 
+        </fieldset>
     </form>
 
 <!--here are my errors--> <!--here are my errors--><!--here are my errors--><!--here are my errors--><!--here are my errors--><!--here are my errors-->
