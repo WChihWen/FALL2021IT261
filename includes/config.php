@@ -9,7 +9,7 @@ $nav1['index.php'] = "Home";
 //$nav1['galleries.php'] = "Galleries";
 
 $nav1['website/daily.php'] = "Switch";
-$nav1['#Troubleshoot'] = "Troubleshoot";
+$nav1['adder.php'] = "Troubleshoot";
 $nav1['#Calculator'] = "Calculator";
 $nav1['#Email'] = "Email";
 $nav1['#Gallery'] = "Gallery";
