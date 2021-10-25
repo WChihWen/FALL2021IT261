@@ -52,7 +52,6 @@
 <?php
 //adder-wrong.php
 if (isset($_POST['num1'],$_POST['num2'])){    
-    $allset = 0;
     if($_POST['num1'] == null || $_POST['num2'] == null ){
         echo '<h3>Please fill out the input fields!</h3>';
     }else{
