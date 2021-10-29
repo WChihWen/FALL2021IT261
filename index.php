@@ -68,6 +68,13 @@
          <li><a href="weeks/week4/celcius.php" target="_blank">celcius.php</a></li>    
       </ul>
       <h3>Week 5:</h3>
+      <ul>
+         <li><a href="weeks/week5/null.php" target="_blank">null.php</a></li>
+         <li><a href="weeks/week5/currency1.php" target="_blank">currency1.php</a></li>
+         <li><a href="weeks/week5/currency2.php" target="_blank">currency2.php</a></li>         
+         <li><a href="weeks/week5/currency3.php" target="_blank">currency3.php</a></li>     
+         <li><a href="weeks/week5/extra-credit.php" target="_blank">extra-credit.php</a></li>           
+      </ul>
       <h3>Week 6:</h3>
       <h3>Week 7:</h3>
       <h3>Week 8:</h3>
