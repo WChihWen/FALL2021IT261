@@ -6,7 +6,7 @@
         <meta name="robots" content="noindex,nofollow"/>
         <title><?php echo $title?></title>
         <link rel="stylesheet" href="css/container.css" />
-        <link rel="stylesheet" href="css/website.css?007" />
+        <link rel="stylesheet" href="css/website.css" />
     </head>
     <body>
 
