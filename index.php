@@ -76,6 +76,11 @@
          <li><a href="weeks/week5/extra-credit.php" target="_blank">extra-credit.php</a></li>           
       </ul>
       <h3>Week 6:</h3>
+      <ul>
+         <li><a href="weeks/week6/form1.php" target="_blank">form1.php (Send an Email)</a></li> 
+         <li><a href="weeks/week6/functions.php" target="_blank">functions.php</a></li> 
+         <li><a href="weeks/week6/implode.php" target="_blank">implode.php</a></li> 
+      </ul>
       <h3>Week 7:</h3>
       <h3>Week 8:</h3>
    </aside>
