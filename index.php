@@ -82,6 +82,11 @@
          <li><a href="weeks/week6/implode.php" target="_blank">implode.php</a></li> 
       </ul>
       <h3>Week 7:</h3>
+      <ul>
+         <li><a href="weeks/week7/random.php" target="_blank">random.php</a></li> 
+         <li><a href="weeks/week7/strings.php" target="_blank">strings.php</a></li> 
+         <li><a href="weeks/week7/pictures.php" target="_blank">pictures.php</a></li> 
+      </ul>
       <h3>Week 8:</h3>
    </aside>
    
