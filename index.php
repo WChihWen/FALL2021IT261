@@ -9,7 +9,8 @@
    <div id="tabs">
       <ul>     
          <li><a href="#tabs-1">About Myself</a></li>   
-         <li><a href="#tabs-2">Screenshot</a></li>
+         <li><a href="#tabs-2">Screenshot of MAMP</a></li>
+         <li><a href="#tabs-3">Screenshot of MySQL</a></li>
       </ul>      
       <div id="tabs-1">
          <div class="wrapper">
@@ -23,14 +24,31 @@
          </div>
       </div>
       <div id="tabs-2">
-         <div>
+         <div class="divscreenshot">
             <h2>Screenshot of displaying MAMP</h2>
             <img src="images/MAMP.png" alt="MAMP" /> 
             <br><br>
             <h2>Screenshot of the error page</h2>
             <img src="images/errorpage.png" alt="errorpage" />             
          </div>  
-      </div>      
+      </div>   
+      <div id="tabs-3">
+         <div class="divscreenshot">
+            <h2>Upload adminer.php onto my server.</h2>
+            <h3>My server is Microsoft Azure. The deployment on Azure need to link my GitHub account.</h3>
+            <img src="images/deployment01.png" alt="deployment01" /> 
+            <br><br><br>
+            <h3>Upload adminer.php onto my GitHub.</h3>
+            <img src="images/deployment02.png" alt="deployment02" /> 
+            <br><br><br>
+            <h3>Log on to MySQL</h3>
+            <img src="images/adminer01.png" alt="adminer01" />    
+            <br><br><br>
+            <img src="images/adminer02.png" alt="adminer02" />    
+            <br><br> <br>   
+            <img src="images/adminer03.png" alt="adminer03" />      
+         </div>  
+      </div>   
    </div>
 </section>
    <aside>

@@ -26,6 +26,9 @@ div.wrapper {
     overflow: auto;
 }
 
+div.divscreenshot img{
+    width:80%;   
+}
 p {
     margin: 1em 1em;
 }

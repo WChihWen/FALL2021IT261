@@ -7,7 +7,7 @@
     <script src="https://use.fontawesome.com/6a71565c22.js"></script>
     <script src="js/jquery-1.12.4.js"></script>
     <script src="js/jquery-ui.js"></script>
-    <link rel="stylesheet" href="css/portal.css" />
+    <link rel="stylesheet" href="css/portal.css?001" />
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/big.css" />
     <link rel="stylesheet" href="css/jquery-ui.css">
