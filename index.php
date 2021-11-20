@@ -88,6 +88,9 @@
          <li><a href="weeks/week7/pictures.php" target="_blank">pictures.php</a></li> 
       </ul>
       <h3>Week 8:</h3>
+      <ul>
+         <li><a href="weeks/week8/people.php" target="_blank">people.php</a></li> 
+      </ul>
    </aside>
    
 <?php include 'includes/footer.php';?>

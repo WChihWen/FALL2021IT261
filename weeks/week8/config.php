@@ -1,25 +1,10 @@
 <?php 
+
+
 ob_start();  // prevents header errors before reading the whole page!
 define('DEBUG', 'TRUE');  // We want to see our errors
 
 include('credentials.php');
-
- 
-
- 
-
- 
-
- echo getenv("DB_HOST");
- 
-
- 
-
- 
-
- 
-
- 
 
 function myError($myFile, $myLine, $errorMsg){
     if(defined('DEBUG') && DEBUG){
