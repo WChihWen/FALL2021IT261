@@ -9,12 +9,12 @@
 
     if(mysqli_num_rows($result) > 0){
         while($row = mysqli_fetch_assoc($result)){
-            echo '<p>For more information about '.$row['first_name'].', pleasse click <a href="people-view.php?id='.$row['people_id'].'">here</a>!</p>';
+            echo '<p>For more information about '.$row['first_name'].', please click <a href="people-view.php?id='.$row['people_id'].'">here</a>!</p>';
             echo '<ul>';
-            echo'<li>'.$row['first_name'].'</li>';
-            echo'<li>'.$row['last_name'].'</li>';
-            echo'<li>'.$row['email'].'</li>';
-           
+            echo '<li>'.$row['first_name'].'</li>';
+            echo '<li>'.$row['last_name'].'</li>';
+            echo '<li>'.$row['email'].'</li>';
+            echo '</ul>';
         }
     } else{
         echo 'Houston, we have a problem!';
