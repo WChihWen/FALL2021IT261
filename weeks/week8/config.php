@@ -10,7 +10,7 @@ include('credentials.php');
 
  
 
- 
+ $mydb="ignore";
 
  
 
