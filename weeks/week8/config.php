@@ -10,7 +10,7 @@ include('credentials.php');
 
  
 
- echo getenv("MYTEST");
+ echo getenv("DB_HOST");
  
 
  
