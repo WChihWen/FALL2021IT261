@@ -15,14 +15,39 @@ h1 a {
 
 section {
     float:left;
-    width: 65%;
+    width: 70%;
     padding-left: 1em;
     position: static;
 }
 
+section table{
+  border-collapse: collapse;
+}
+td, th {
+  border: 1px solid #999;
+  padding: 0.5rem;
+}
+section th{
+  background-color: #F4D19B;
+}
+section tr:nth-child(odd) {
+  background-color: white;
+}
+
+section tr:nth-child(even) {
+  background-color: #FDFCE5;
+}
+
+section img{
+  width:160px;
+  height:200px;
+  border: 1px solid #000;
+  border-radius: 75%;
+}
+
 aside {
     float: right;
-    width: 32%;
+    width: 27%;
 }
 
 footer {
@@ -70,7 +95,7 @@ figure {
 
 
 /* MOBILE STYLES */
-@media all and (max-width:650px){
+@media all and (max-width:700px){
     main {
         width:100%;
     }

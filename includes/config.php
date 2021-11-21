@@ -1,4 +1,6 @@
 <?php
+
+include('credentials.php');
 /*
 portal-config.php
 
@@ -11,9 +13,9 @@ $nav1['index.php'] = "Home";
 $nav1['website/daily.php'] = "Switch";
 $nav1['adder.php'] = "Troubleshoot";
 $nav1['calculator.php'] = "Calculator";
-$nav1['#Email'] = "Email";
-$nav1['#Gallery'] = "Gallery";
-$nav1['#Database'] = "Database";
+//$nav1['#Email'] = "Email";
+$nav1['gallery.php'] = "Gallery";
+//$nav1['#Database'] = "Database";
 
 
 //prevents data from being sent early
@@ -31,11 +33,14 @@ $logo_color = '';
 $logo = ' fa-home';
 switch(THIS_PAGE){
     case 'index.php':
-        $title = "Chih Wen Wang's Portal Page";
+        $title = "   Chih Wen Wang's Portal Page";
         $logo = ' fa-home';
         $PageID = "  Portal Page";
         break;    
-    case '#':
+    case 'gallery.php':
+        $title = "Chih Wen's Gallery of IT261 Website";
+        $logo = ' fa-home';
+        $PageID = "Gallery of Super Hero";
         break;
    
     default:
@@ -75,5 +80,19 @@ function makeLinks($linkArray){
     return $myReturn;    
 }
 
+
+
+define('DEBUG', 'TRUE');  // We want to see our errors
+
+function myError($myFile, $myLine, $errorMsg){
+    if(defined('DEBUG') && DEBUG){
+        echo 'Error in file: <b> '.$myFile.' </b> on line: <b> '.$myLine.' </b>';
+        echo 'Error message: <b> '.$errorMsg.'</b>';
+        die();
+    }  else {
+        echo ' Houston, we have a problem!';
+        die();
+    }
+}
 
 ?>
