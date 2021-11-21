@@ -1,7 +1,7 @@
 <?php include 'includes/header.php';?> 
 
 <section>  
-   <h2>Marvel Super Heroes</h2>
+   <h2 class="pageID"><?=$PageID?></h2>  
 <?php   
     $iConn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) or die(myError(__FILE__,__LINE__,mysqli_connect_error()));
             

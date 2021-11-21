@@ -28,7 +28,7 @@
                 </nav>
             </header>
         
-            <h2 class="pageID"><?=$PageID?></h2>
+            
         
 <!--  header end here  -->
 

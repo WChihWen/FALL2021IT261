@@ -6,6 +6,7 @@
   } );
   </script>
 <section>  
+   <h2 class="pageID"><?=$PageID?></h2>
    <div id="tabs">
       <ul>     
          <li><a href="#tabs-1">About Myself</a></li>   
