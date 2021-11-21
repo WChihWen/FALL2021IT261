@@ -15,7 +15,7 @@
 
         if(mysqli_num_rows($result) > 0){
             while($row = mysqli_fetch_assoc($result)){
-                echo '<p><h3>For more information about '.$row['first_name'].', please click <a href="people-view.php?id='.$row['people_id'].'">here</a>!</h3></p>';
+                echo '<h3>For more information about '.$row['first_name'].', please click <a href="people-view.php?id='.$row['people_id'].'">here</a>!</h3>';
                 echo '<ul>';
                 echo '<li>'.$row['first_name'].'</li>';
                 echo '<li>'.$row['last_name'].'</li>';
