@@ -40,7 +40,7 @@ switch(THIS_PAGE){
     case 'gallery.php':
         $title = "Chih Wen's Gallery of IT261 Website";
         $logo = ' fa-home';
-        $PageID = "";
+        $PageID = "   ";
         break;
    
     default:
