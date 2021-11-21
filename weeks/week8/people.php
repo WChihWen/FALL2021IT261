@@ -5,7 +5,7 @@
 
 ?>
 <main>
-    <h1>Welcome to my People Page Class Exercise</h1>
+    <h2>Welcome to my People Page Class Exercise</h2>
     <br>
     <?php
         $iConn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) or die(myError(__FILE__,__LINE__,mysqli_connect_error()));
@@ -33,7 +33,7 @@
     ?>
     </main>
     <aside>
-        <h1>My Mystery Aside</h1>
+        <h2>My Mystery Aside</h2>
     </aside>
 </div>
 <?php include('includes/footer.php');?>
