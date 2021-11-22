@@ -1,7 +1,7 @@
 <?php
 
 $nav1['index.php'] = "Home";
-$nav1['aboub.php'] = "About";
+$nav1['about.php'] = "About";
 $nav1['daily.php'] = "Daily";
 $nav1['project.php'] = "Project";
 $nav1['contact.php'] = "Contact";

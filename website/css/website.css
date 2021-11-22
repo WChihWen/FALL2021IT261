@@ -59,6 +59,32 @@ article{
 .content p{
     text-align:center;
 }
+.content table{
+    border-collapse: collapse;
+  }
+.content td, th {
+    border: 1px solid #999;
+    padding: 0.5rem;
+  }
+.content th{
+    background-color: #F4D19B;
+  }
+.content tr:nth-child(odd) {
+    background-color: white;
+  }
+  
+.content tr:nth-child(even) {
+    background-color: #FDFCE5;
+  }
+  
+.heroImg {
+    width:160px;
+    height:200px;
+    border: 1px solid #000;
+    border-radius: 75%;
+  }
+
+
 
 
 .ads img{
