@@ -3,7 +3,7 @@
 $nav1['index.php'] = "Home";
 $nav1['about.php'] = "About";
 $nav1['daily.php'] = "Daily";
-$nav1['project.php'] = "Project";
+$nav1['people.php'] = "People";
 $nav1['contact.php'] = "Contact";
 $nav1['gallery.php'] = "Gallery";
 
@@ -35,10 +35,10 @@ switch(THIS_PAGE){
         $headline = 'Welcome to our Daily page where my Homework 3 Switch will dispaly';
         $logo = 'logo_tv.png';
         break;
-    case 'project.php':
-        $title = "Project page of our IT261 Website";
-        $body='project inner';
-        $headline = 'Welcome to our Project page of our IT261 Website';
+    case 'people.php':
+        $title = "People page of our IT261 Website";
+        $body='people inner';
+        $headline = 'Welcome to our People page of our IT261 Website';
         $logo = 'logo_php.png';
         break;
     case 'contact.php':
