@@ -3,7 +3,7 @@ html {
     font-family: 'Quicksand', sans-serif;
     font-size: 0.95em;
     line-height: 1.5em;
-    min-width: 700px;
+    min-width: 860px;
 }
 
 main {               
@@ -64,7 +64,7 @@ article{
   }
 .content td, th {
     border: 1px solid #999;
-    padding: 0.5rem;
+    padding: 0.2rem;
   }
 .content th{
     background-color: #F4D19B;
@@ -84,15 +84,22 @@ article{
     border-radius: 75%;
   }
 
+.heroImg1 {
+    width:160px;
+    height:200px;
+    /* border: 1px solid #000; */
+    border-radius: 75%;
+    margin:6px;    
+}
 
-
+.DBImg{
+    width: 90%;
+}
 
 .ads img{
     padding:3em;    
     
 }
-
-
 .links h1 {
     padding-left: 60px;
     padding-top: 10px;
@@ -303,3 +310,22 @@ footer a:hover {
     article h1{
         text-align: center;
     }
+
+.center{   
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.center table{
+    margin: 5px;
+    border: 1px solid #FDFCE5;    
+}
+
+.blurb{
+    font-style: italic;
+    font-size: .9em;
+}
+    

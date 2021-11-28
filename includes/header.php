@@ -9,7 +9,7 @@
     <script src="js/jquery-ui.js"></script>
     <link rel="stylesheet" href="css/portal.css?001" />
     <link rel="stylesheet" href="css/nav.css" />
-    <link rel="stylesheet" href="css/big.css?002" />
+    <link rel="stylesheet" href="css/big.css?003" />
     <link rel="stylesheet" href="css/jquery-ui.css">
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">   

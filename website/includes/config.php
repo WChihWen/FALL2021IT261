@@ -1,5 +1,7 @@
 <?php
 
+include('credentials.php');
+
 $nav1['index.php'] = "Home";
 $nav1['about.php'] = "About";
 $nav1['daily.php'] = "Daily";
@@ -38,7 +40,13 @@ switch(THIS_PAGE){
     case 'people.php':
         $title = "People page of our IT261 Website";
         $body='people inner';
-        $headline = 'Welcome to our People page of our IT261 Website';
+        $headline = 'Welcome to our Super Heros page of Marvel';
+        $logo = 'logo_php.png';
+        break;
+    case 'people-view.php':
+        $title = "People page of our IT261 Website";
+        $body='people-view inner';
+        $headline = 'Welcome to our Super Heros page of Marvel';
         $logo = 'logo_php.png';
         break;
     case 'contact.php':

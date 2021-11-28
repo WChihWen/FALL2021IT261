@@ -18,10 +18,10 @@
         echo '</tr>';
         while($row = mysqli_fetch_assoc($result)){
             echo '<tr>';            
-            echo '<td><img src="images/'.$row['imgs'].'.jpg" alt="'.$row['first_name'].'"></td>';
+            echo '<td><img src="website/images/'.$row['imgs'].'.jpg" alt="'.$row['first_name'].'"></td>';
             echo '<td>'.$row['first_name'].' '.$row['last_name'].'</td>';
             echo '<td>'.$row['description'].'</td>';
-            echo '<td><img src="images/'.$row['imgs'].'_1.jpg" alt="'.$row['first_name'].'"></td>';
+            echo '<td><img src="website/images/'.$row['imgs'].'_1.jpg" alt="'.$row['first_name'].'"></td>';
             echo '</tr>';
         }
         echo '</table>';
