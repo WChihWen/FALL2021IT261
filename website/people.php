@@ -26,7 +26,7 @@
                         echo '<tr><td '.$bc.'>';              
                         echo '<a href="people-view.php?PID='.$row['hero_id'].'"><img class="heroImg1" src="images/'.$row['imgs'].'_1.jpg" alt="'.$row['first_name'].'"></a>';  
                         echo '</td></tr>';     
-                        echo '<tr><td><a href="people-view.php?PID='.$row['hero_id'].'">'.$row['hero'].'</a></tr></td>';
+                        echo '<tr><td><a href="people-view.php?PID='.$row['hero_id'].'">'.$row['hero'].'</a></td></tr>';
                         echo '</table>';
                     }
        

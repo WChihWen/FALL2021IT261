@@ -45,7 +45,7 @@
                         <td rowspan="6" style="width:120px;" ><? echo '<img class="heroImg1" src="images/'.$image.'.jpg" alt="'.$first_name.' '.$last_name.'">' ;?></td>
                         <th >
                             <b>NAME</b> 
-                        </td>
+                        </th>
                         <td  rowspan="6" style="width:120px;" ><? echo '<img class="heroImg1" src="images/'.$image.'_1.jpg" alt="'.$hero.'">'; ?></td>
                     </tr>
                     <tr>
