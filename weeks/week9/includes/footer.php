@@ -1,5 +1,5 @@
 
-
+</div>
 <footer>    
         <ul>
             <li>Copyright <?php echo date('Y')?></li>
