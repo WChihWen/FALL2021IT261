@@ -291,12 +291,13 @@ footer a:hover {
         font-weight: bold;
         border: 0;
         cursor: pointer;
+        margin-top: 0.4em;
     }
     
     .button {
         display: block;
-        width: 80px;
-        height: 30px;
+        width: 76px;
+        height: 26px;
         background: #4E9CAF;
         padding: 2px;
         text-align: center;
@@ -324,8 +325,15 @@ footer a:hover {
     border: 1px solid #FDFCE5;    
 }
 
+.center a {
+    margin: 5px;
+}
 .blurb{
     font-style: italic;
     font-size: .9em;
 }
+
+.ulnone{
+    list-style: none; 
+}   
     

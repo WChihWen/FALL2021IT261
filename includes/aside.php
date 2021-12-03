@@ -55,3 +55,8 @@
       <ul>
          <li><a href="weeks/week8/people.php" target="_blank">people.php</a></li> 
       </ul>
+      <h3>Week 9:</h3>
+      <ul>
+         <li><a href="https://github.com/WChihWen/FALL2021IT261" target="_blank">GitHub</a></li>
+         <li><a href="weeks/week9/login.php" target="_blank">login.php</a></li> 
+      </ul>

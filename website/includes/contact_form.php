@@ -40,8 +40,9 @@
             </li>             
         </ul>
         <span class="error"><?php echo $privacy_Err;?></span>
-
+        <div class="center">
         <input type="submit" class="btn" value="Send it">
-        <p><a href="" class="button">Reset</a></p>
+        <a href="" class="button">Reset</a>
+        </div>
     </fieldset>
 </form>

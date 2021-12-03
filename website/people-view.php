@@ -1,6 +1,5 @@
-<?php include 'includes/header.php';?> 
-
 <?php 
+    include 'includes/header.php';
     if (isset($_GET["PID"])){
         $id =(int)$_GET["PID"];
     } else {
