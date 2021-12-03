@@ -68,9 +68,11 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
       $privacy = $_POST['privacy'];
    }
 
-   if($all_set == true && $_POST['pwd'] != $_POST['cfpwd']){
-      $cfpwd_Err .= '<br> Password and Confirm Password have to the Same';  
-      $all_set == false;
+   if($all_set == true ){
+      if ($_POST['pwd'] != $_POST['cfpwd']){
+         $cfpwd_Err .= '<br> Password and Confirm Password have to the Same';  
+         $all_set = false;
+      }
    }
 
    if($all_set == true){

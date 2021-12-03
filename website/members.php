@@ -70,7 +70,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 
    if($all_set == true && $_POST['pwd'] != $_POST['cfpwd']){
       $cfpwd_Err .= '<br> Password and Confirm Password have to the Same';  
-      $all_set == false;
+      $all_set = false;
    }
 
    if($all_set == true){
