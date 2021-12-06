@@ -1,4 +1,5 @@
 <?php
+include('credentials.php');
 
 $url = 'https://api.sendgrid.com/';
 $user = SGUSERNAME;
