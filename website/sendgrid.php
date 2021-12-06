@@ -39,7 +39,7 @@ curl_setopt($session, CURLOPT_SSLVERSION, CURL_SSLVERSION_TLSv1_2);
 curl_setopt($session, CURLOPT_RETURNTRANSFER, true);
 
 // obtain response
-$response = curl_exec($session).'<br>UserName: '.SGUSERNAME.'' ;
+$response = curl_exec($session).'<br>UserName: '.SGUSERNAME.'<br>Key: '.SGKEY.'' ;
 curl_close($session);
 
 // print everything out
