@@ -125,7 +125,7 @@
 
             $to = $email;
             //$to = 'szemeo@mystudentswa.com';
-            $from ='';
+            // $from ='';
             $subject = 'Emailable Form from Chih Wen\'s website, '.date('Y-m-d') ;   
 
             $body ='
@@ -137,38 +137,90 @@
                 Browser: '. $my_browser[$browser] .' '.PHP_EOL.'                         
                 Comments: '.$comments .' '.PHP_EOL.'      
             ';
-            // $headers = array(
-            //     'From' => 'noreply@mystudentswa.com',
-            //     'Reply-to' => ''.$email.''
-            // );
+            // // $headers = array(
+            // //     'From' => 'noreply@mystudentswa.com',
+            // //     'Reply-to' => ''.$email.''
+            // // );
 
-            //$headers = "MIME-Version: 1.0" . "\r\n";
-            //$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-            // More headers
-            $headers = 'From: <noreply@mystudentswa.com>' . "\r\n";
-            $headers .= 'Cc: '.$email. "\r\n";
-            $headers .= 'Reply-to: '.$email. "\r\n";
+            // //$headers = "MIME-Version: 1.0" . "\r\n";
+            // //$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+            // // More headers
+            // $headers = 'From: <noreply@mystudentswa.com>' . "\r\n";
+            // $headers .= 'Cc: '.$email. "\r\n";
+            // $headers .= 'Reply-to: '.$email. "\r\n";
 
             
-            $success = mail($to, $subject, $body, $headers);
-            if($success){
-                //$host = $_SERVER['HTTP_HOST'];
-                //$uri = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
-                $extra = 'index.php';
-                //header("Location:https://$host$uri/$extra");     
-                //header( "refresh:5;url=$extra");
-                //echo '<span>You\'ll be redirected in about 5 secs. If not, click <a href="'.$extra.'">here</a>.</span>';
-                echo '
-                <br><br><br><br>  
-                Hello, <b>' .$first_name. '</b> <br>
-                Thanks for contacting us.
-                This email was sent to <b>'.$to.'</b> successfully! <br><br> 
-                Click <a href="'.$extra.'">here,</a> to go to home page.
-                <br><br><br><br><br><br>    
+            // $success = mail($to, $subject, $body, $headers);
+            // if($success){
+            //     //$host = $_SERVER['HTTP_HOST'];
+            //     //$uri = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
+            //     $extra = 'index.php';
+            //     //header("Location:https://$host$uri/$extra");     
+            //     //header( "refresh:5;url=$extra");
+            //     //echo '<span>You\'ll be redirected in about 5 secs. If not, click <a href="'.$extra.'">here</a>.</span>';
+            //     echo '
+            //     <br><br><br><br>  
+            //     Hello, <b>' .$first_name. '</b> <br>
+            //     Thanks for contacting us.
+            //     This email was sent to <b>'.$to.'</b> successfully! <br><br> 
+            //     Click <a href="'.$extra.'">here,</a> to go to home page.
+            //     <br><br><br><br><br><br>    
                 
-                ';
-                exit;
-            }   
+            //     ';
+            //     exit;
+            //}   
+
+            //SendGrid
+            $url = 'https://api.sendgrid.com/';
+            $user = SENDGRID;
+            $pass = SENDGRIDPWD;
+
+            // $json_string = array(
+            //     'to' => array(
+            //         'example1@sendgrid.com'
+            //     ),
+            //     'category' => 'test_category'
+            // );
+            $json_string = array(
+                'to' => array(
+                    $to
+                )               
+            );
+
+
+            $params = array(
+                'api_user'  => $user,
+                'api_key'   => $pass,
+                'x-smtpapi' => json_encode($json_string),
+                'to'        => $email,
+                'subject'   => $subject ,                
+                'text'      => $body,
+                'from'      => 'noreply@mystudentswa.com',
+            );
+
+
+            $request =  $url.'api/mail.send.json';
+
+            // Generate curl request
+            $session = curl_init($request);
+            // Tell curl to use HTTP POST
+            curl_setopt ($session, CURLOPT_POST, true);
+            // Tell curl that this is the body of the POST
+            curl_setopt ($session, CURLOPT_POSTFIELDS, $params);
+            // Tell curl not to return headers, but do return the response
+            curl_setopt($session, CURLOPT_HEADER, false);
+            // Tell PHP not to use SSLv3 (instead opting for TLS)
+            curl_setopt($session, CURLOPT_SSLVERSION, CURL_SSLVERSION_TLSv1_2);
+            curl_setopt($session, CURLOPT_RETURNTRANSFER, true);
+
+            // obtain response
+            $response = curl_exec($session);
+            curl_close($session);
+
+            // print everything out
+            print_r($response);
+            
+            exit;
         }
     }
 
