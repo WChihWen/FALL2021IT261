@@ -123,8 +123,8 @@
             //$headers .= 'Cc: myboss@example.com' . "\r\n";
 
 
-            //$to = $email;
-            $to = 'szemeo@mystudentswa.com';
+            $to = $email;
+            //$to = 'szemeo@mystudentswa.com';
             $from ='';
             $subject = 'Emailable Form from Chih Wen\'s website, '.date('Y-m-d') ;   
 
