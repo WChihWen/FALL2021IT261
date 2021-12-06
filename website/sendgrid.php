@@ -1,6 +1,7 @@
 <?php
 include('includes/credentials.php');
 
+
 $url = 'https://api.sendgrid.com/';
 $user = SGUSERNAME;
 $pass = SGKEY;
