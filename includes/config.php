@@ -11,7 +11,7 @@ $nav1['index.php'] = "Home";
 $nav1['website/daily.php'] = "Switch";
 $nav1['adder.php'] = "Troubleshoot";
 $nav1['calculator.php'] = "Calculator";
-$nav1['final/daily.php'] = "Final Project";
+$nav1['final/switch.php'] = "Final Project";
 //$nav1['#Database'] = "Database";
 
 
