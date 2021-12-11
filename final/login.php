@@ -88,8 +88,8 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
          <aside class="links" style="width:180px;">                
             <br>
          </aside>
-         <aside class="ads">
-            <?php include 'includes/aside_ads.php';?> 
+         <aside class="ads" style="width:180px;">
+         <br>
          </aside>
     
 <?php include 'includes/footer.php';?>

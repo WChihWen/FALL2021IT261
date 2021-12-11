@@ -2,6 +2,10 @@
  <?php include 'includes/header.php';?>  
  <?php 
 
+    if (isset($_SESSION["USERNAME"]) == false or $_SESSION["USERNAME"] == NULL){     
+        header("Location:login.php");  
+    }
+
     $lang ="";
 
     if (isset($_GET["lang"])){

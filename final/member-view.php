@@ -1,8 +1,7 @@
 <?php include 'includes/header.php';?> 
 
-<?php 
-    // session_start(); 
-    //session_destroy();
+<?php     
+
     if (isset($_GET["USERNAME"])){
         $USERNAME = $_GET["USERNAME"];
     }else{    
@@ -29,7 +28,7 @@
             $str .= '<li><b>Last Name:</b> '.$row['last_name'].'</li>';
             $str .= '<li><b>Email:</b> '.$row['email'].'</li>';
             $str .= '<li><b>Lgoin Account:</b> '.$row['username'].'</li>';         
-            $str .= '</ul>'; 
+            $str .= '</ul><br>'; 
             $welcome ='';
             switch($type){            
                 case 'login':
@@ -67,9 +66,11 @@
                   <?=makeLinks($nav1)?>                    
             </ul>            
         </nav>
-        <article class="content">
+        <article class="content" style="display:flex; flex-direction: column;  flex-wrap: wrap;">
             <h1><?php echo $headline?></h1> 
+            <div class="center">
             <?php echo $str ;?>
+            </div>
             <div class="center">
                 <br>
                <?php echo $welcome ;?>
@@ -78,8 +79,8 @@
         <aside class="links" style="width:180px;">                
             <br>
         </aside>
-        <aside class="ads">
-            <?php include 'includes/aside_ads.php';?> 
+        <aside class="ads"  style="width:180px;">
+        <br>
         </aside>
     
 <?php include 'includes/footer.php';?>

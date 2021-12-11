@@ -29,7 +29,7 @@ if (isset($_GET["logout"])){
     </ul>            
     </nav>
     
-    <article class="content">
+    <article class="content" >
         <h1><?php echo $headline?></h1>   
         <p><?php echo 'Hi '.$_SESSION["USERNAME"].', do you like to sign out?';?></p>     
         <br>
@@ -40,8 +40,8 @@ if (isset($_GET["logout"])){
     <aside class="links" style="width:180px;">                
     <br>
     </aside>
-    <aside class="ads">
-    <?php include 'includes/aside_ads.php';?> 
+    <aside class="ads" style="width:180px;">
+    <br>
     </aside>
     
 <?php include 'includes/footer.php';?>
