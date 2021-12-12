@@ -5,9 +5,9 @@
     $body ="Hey man, I'm OK!";
     $subject ="Test email";
     
-
+    
     $headers = array(
-        'Authorization: Bearer '.SGKEY,
+        'Authorizations: Bearer '.SGKEY,
         'Content-Type: application/json'
     );
 
