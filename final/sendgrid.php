@@ -5,9 +5,9 @@
     $body ="Hey man, I'm OK!";
     $subject ="Test email";
     
-    
+    $sendgrid = new \SendGrid(SGKEY);
     $headers = array(
-        'Authorizations: Bearer '.SGKEY,
+        'Authorizations: Bearer '.$sendgrid,
         'Content-Type: application/json'
     );
 
