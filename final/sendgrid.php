@@ -7,7 +7,7 @@
     
 
     $headers = array(
-        'Authorizations: Bearer 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',
+        'Authorization: Bearer '.SGKEY,
         'Content-Type: application/json'
     );
 
