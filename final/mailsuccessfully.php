@@ -20,7 +20,7 @@
                 if (isset($_GET["to"])){
                     $to =$_GET["to"];                
                 }
-                echo '<div class="center">';
+                echo '<p>';
                 echo '                 
                 <br><br><br><br>  
                 Hello, <b>' .$first_name. '</b> <br>
@@ -29,7 +29,7 @@
                 Click <a href="index.php">here,</a> to go to home page.
                 <br><br><br><br><br><br>                     
                 ';
-                echo '</div>';
+                echo '</p>';
             ?>
          </article>
          <aside class="links">     
