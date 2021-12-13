@@ -120,6 +120,7 @@
 
 
       if($all_set == true){
+
          //send an email
          //Always set content-type when sending HTML email
          //$headers = "MIME-Version: 1.0" . "\r\n";
@@ -130,11 +131,11 @@
          //$headers .= 'Cc: myboss@example.com' . "\r\n";
 
 
-         //$to = $email;
-         $to = 'szemeo@mystudentswa.com';
-         // $from ='';
+         $to = $email;
+         //$to = 'szemeo@mystudentswa.com';
          $subject = 'Emailable Form from Chih Wen\'s website, '.date('Y-m-d') ;   
-
+         $from = 'Chih.W.Wang@seattlecolleges.edu';
+         $from_name = 'CW';
          $body ='
                The first name is: '. $first_name .' '.PHP_EOL.'
                The last name is: '. $last_name .' '.PHP_EOL.'
@@ -144,38 +145,59 @@
                Browser: '. $my_browser[$browser] .' '.PHP_EOL.'                         
                Comments: '.$comments .' '.PHP_EOL.'      
          ';
-         // $headers = array(
-         //     'From' => 'noreply@mystudentswa.com',
-         //     'Reply-to' => ''.$email.''
-         // );
 
-         //$headers = "MIME-Version: 1.0" . "\r\n";
-         //$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-         // More headers
-         $headers = 'From: <noreply@mystudentswa.com>' . "\r\n";
-         $headers .= 'Cc: '.$email. "\r\n";
-         $headers .= 'Reply-to: '.$email. "\r\n";
+
+
+         //require 'vendor/autoload.php'; // If you're using Composer (recommended)
+         // Comment out the above line if not using Composer
+         require("sendgrid-php/sendgrid-php.php");
+         // If not using Composer, uncomment the above line and
+         // download sendgrid-php.zip from the latest release here,
+         // replacing <PATH TO> with the path to the sendgrid-php.php file,
+         // which is included in the download:
+         // https://github.com/sendgrid/sendgrid-php/releases
 
          
-         $success = mail($to, $subject, $body, $headers);
-         if($success){
-               //$host = $_SERVER['HTTP_HOST'];
-               //$uri = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
-               $extra = 'index.php';
-               //header("Location:https://$host$uri/$extra");     
-               //header( "refresh:5;url=$extra");
-               //echo '<span>You\'ll be redirected in about 5 secs. If not, click <a href="'.$extra.'">here</a>.</span>';
-               echo '
-               <br><br><br><br>  
-               Hello, <b>' .$first_name. '</b> <br>
-               Thanks for contacting us.
-               This email was sent to <b>'.$to.'</b> successfully! <br><br> 
-               Click <a href="'.$extra.'">here,</a> to go to home page.
-               <br><br><br><br><br><br>    
-               
-               ';
-               exit;
-         }   
+         $email = new \SendGrid\Mail\Mail(); 
+         $email->setFrom($from , $from_name);
+         $email->setSubject($subject);
+         $email->addTo($to, $first_name);
+         $email->addContent("text/plain", $body);
+         $email->addContent(
+            "text/html", $body
+         );
+      
+         $sendgrid = new \SendGrid(SGKEY);
+         try {
+            $response = $sendgrid->send($email);
+            echo "<pre>";
+            print $response->statusCode() . "\n";
+            print_r($response->headers());
+            print $response->body() . "\n";
+            echo "</pre><br>";
+
+
+            //$host = $_SERVER['HTTP_HOST'];
+            //$uri = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
+            $extra = 'index.php';
+            //header("Location:https://$host$uri/$extra");     
+            //header( "refresh:5;url=$extra");
+            //echo '<span>You\'ll be redirected in about 5 secs. If not, click <a href="'.$extra.'">here</a>.</span>';
+
+            echo '
+            <br><br><br><br>  
+            Hello, <b>' .$first_name. '</b> <br>
+            Thanks for contacting us.
+            This email was sent to <b>'.$to.'</b> successfully! <br><br> 
+            Click <a href="'.$extra.'">here,</a> to go to home page.
+            <br><br><br><br><br><br>    
+            
+            ';
+            exit;
+
+         } catch (Exception $e) {
+            echo 'Caught exception: '. $e->getMessage() ."\n";
+         }       
       }
    }
 

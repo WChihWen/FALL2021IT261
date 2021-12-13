@@ -52,7 +52,7 @@
 
 //IT261:   
     
-define('SGKEY', getenv("SGKEY"));
+
 //require 'vendor/autoload.php'; // If you're using Composer (recommended)
 // Comment out the above line if not using Composer
  require("sendgrid-php/sendgrid-php.php");
