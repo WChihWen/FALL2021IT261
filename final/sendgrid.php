@@ -63,9 +63,9 @@ define('SGKEY', getenv("SGKEY"));
 // https://github.com/sendgrid/sendgrid-php/releases
 
 $email = new \SendGrid\Mail\Mail(); 
-$email->setFrom("yaman0923@gmail.com", "Example User");
+$email->setFrom("Chih.W.Wang@seattlecolleges.edu", "CW");
 $email->setSubject("Sending with SendGrid is Fun");
-$email->addTo("yaman0923@gmail.com", "Example User");
+$email->addTo("yaman0923@gmail.com", "CW");
 $email->addContent("text/plain", "and easy to do anywhere, even with PHP");
 $email->addContent(
     "text/html", "<strong>and easy to do anywhere, even with PHP</strong>"
