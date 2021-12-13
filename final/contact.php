@@ -137,12 +137,12 @@
          $from = 'Chih.W.Wang@seattlecolleges.edu';
          $from_name = 'CW';
          $body ='
-               The first name is: '. $first_name .' '.PHP_EOL.'
-               The last name is: '. $last_name .' '.PHP_EOL.'
-               Email: '.$email.' '.PHP_EOL.'
-               Phone: '.$phone.' '.PHP_EOL.'
-               Computer Languages: '.my_langs($my_langs,$langs).' '.PHP_EOL.'       
-               Browser: '. $my_browser[$browser] .' '.PHP_EOL.'                         
+               The first name is: '. $first_name .' <br>'.PHP_EOL.'
+               The last name is: '. $last_name .' <br>'.PHP_EOL.'
+               Email: '.$email.' <br>'.PHP_EOL.'
+               Phone: '.$phone.' <br>'.PHP_EOL.'
+               Computer Languages: '.my_langs($my_langs,$langs).' <br>'.PHP_EOL.'       
+               Browser: '. $my_browser[$browser] .' <br>'.PHP_EOL.'                         
                Comments: '.$comments .' '.PHP_EOL.'      
          ';
 
@@ -170,33 +170,24 @@
          $sendgrid = new \SendGrid(SGKEY);
          try {
             $response = $sendgrid->send($email);
-            echo "<pre>";
-            print $response->statusCode() . "\n";
-            print_r($response->headers());
-            print $response->body() . "\n";
-            echo "</pre><br>";
+            //echo "<pre>";
+            //print $response->statusCode() . "\n";
+            //print_r($response->headers());
+            //print $response->body() . "\n";
+            //echo "</pre><br>";
 
 
             //$host = $_SERVER['HTTP_HOST'];
             //$uri = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
-            $extra = 'index.php';
+            $extra = 'mailsuccessfully.php?first_name='.$first_name.'&to='.$to.'';
             //header("Location:https://$host$uri/$extra");     
             //header( "refresh:5;url=$extra");
             //echo '<span>You\'ll be redirected in about 5 secs. If not, click <a href="'.$extra.'">here</a>.</span>';
-
-            echo '
-            <br><br><br><br>  
-            Hello, <b>' .$first_name. '</b> <br>
-            Thanks for contacting us.
-            This email was sent to <b>'.$to.'</b> successfully! <br><br> 
-            Click <a href="'.$extra.'">here,</a> to go to home page.
-            <br><br><br><br><br><br>    
             
-            ';
-            exit;
-
+            header("Location:".$extra);  
          } catch (Exception $e) {
             echo 'Caught exception: '. $e->getMessage() ."\n";
+            exit;
          }       
       }
    }
