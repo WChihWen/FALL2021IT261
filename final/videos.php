@@ -22,7 +22,7 @@ if (isset($_SESSION["USERNAME"]) == false or $_SESSION["USERNAME"] == NULL){
             <?php   
                 $iConn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) or die(myError(__FILE__,__LINE__,mysqli_connect_error()));
                         
-                $sql ='select * from videos';
+                $sql ='select * from videos order by video_type ASC';
                 $result = mysqli_query($iConn,$sql)  or die(myError(__FILE__,__LINE__,mysqli_error($iConn)));
 
                 if(mysqli_num_rows($result) > 0){
@@ -30,9 +30,9 @@ if (isset($_SESSION["USERNAME"]) == false or $_SESSION["USERNAME"] == NULL){
                     $i = 0;               
                     echo '<table style="width:90%">';
                     echo '<tr>';
-                    echo '<th style="width:40px">No.</th>';
-                    echo '<th style="width:100px">Category</th>'; 
-                    echo '<th>Subject</th>';                    
+                    echo '<th style="width:40px;">No.</th>';
+                    echo '<th style="width:100px;">Category</th>'; 
+                    echo '<th >Subject</th>';                    
                     echo '<th>Channel</th>';
                     echo '<th style="width:100px">Create Date</th>';
                     echo '</tr>';
@@ -40,7 +40,7 @@ if (isset($_SESSION["USERNAME"]) == false or $_SESSION["USERNAME"] == NULL){
                         echo '<tr>';
                         echo '<th>'.($i + 1).'</th>'; 
                         echo '<td>'.$row['video_type'].'</td>';                       
-                        echo '<td><a href="video-view.php?VID='.$row['video_id'].'">'.$row['video_title'].'</a></td>'; 
+                        echo '<td style="text-align:left;"><a href="video-view.php?VID='.$row['video_id'].'">'.$row['video_title'].'</a></td>'; 
                         echo '<td><a href="'.$row['channel_url'].'" target="_blank">'.$row['channel_name'].'</a></td>';
                         echo '<td>'.$row['video_date'].'</td>';
                         $i = $i + 1;

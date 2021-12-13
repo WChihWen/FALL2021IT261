@@ -1,4 +1,11 @@
-<?php include 'includes/header.php';?> 
+<?php 
+include 'includes/header.php';
+
+if (isset($_SESSION["USERNAME"]) == false or $_SESSION["USERNAME"] == NULL){     
+   header("Location:login.php");  
+}
+
+?> 
 
 <main <?php echo $bc ?>>
     <div class="container">
@@ -11,11 +18,33 @@
             </ul>            
          </nav>
          <article class="content" >  
-
+         <h1><?php echo $headline?></h1> 
+            <h2>Information of the website</h2>
+            <section style="text-align:left;">   
+               <b>Login Page:</b><br>
+               The Login page is to sign in to this website if you like to browse information.
+               <br><br>      
+               <b>Member Page:</b><br>
+               The Member Page is to create a new member to allow access to this website.
+               <br><br> 
+               <b>About Page:</b><br>
+               The About Page is to show the data table and data Rows in the database.
+               <br><br>  
+               <b>Switch Page:</b><br>
+               The Switch Page is to show my notes on learning programming languages.
+               <br><br>
+               <b>Videos Page:</b><br>
+               The Videos Page is to collect some tutorial videos on YouTub.
+               <br><br>
+               <b>Contact Page:</b><br>
+               The Contact Page is to contact us.
+               
+            </section>
          </article>
-         <aside class="links">     
+         <aside class="links" style="width:120px;">     
          </aside>
-         <aside class="ads">            
+         <aside class="ads" >    
+            <?php include 'includes/aside_ads.php';?>         
          </aside>
     
 <?php include 'includes/footer.php';?>

@@ -29,7 +29,7 @@ switch(THIS_PAGE){
     case 'index.php':
         $title = "Home page of final project website";
         $body='home';
-        $headline = 'Welcome to my final project of my IT261 class';
+        $headline = 'Welcome to the home page of the final project website';
         $logo = 'logo_php.png';
         break;    
     case 'about.php':
@@ -41,55 +41,55 @@ switch(THIS_PAGE){
     case 'switch.php':
         $title = "Switch page of final project website";
         $body='switch inner';
-        $headline = 'Welcome to Switch page where notes of my learning will dispaly';
+        $headline = 'Welcome to switch page notes of my learning';
         $logo = 'logo_tv.png';
         break;
     case 'videos.php':
         $title = "videos page of final project website";
         $body='video inner';
-        $headline = 'Welcome to videos page of learning';
+        $headline = 'Welcome to the videos page where to collect some videos of tutorials';
         $logo = 'logo_php.png';
         break;
     case 'video-view.php':
         $title = "People page of final project website";
         $body='video-view inner';
-        $headline = 'Welcome to video detail page of learning';
+        $headline = 'Welcome to the video detail where to display video detail';
         $logo = 'logo_php.png';
         break;
     case 'contact.php':
         $title = "Contact page of final project website";
         $body='contact inner';
-        $headline = 'Welcome to our Contact page of our IT261 Website';
+        $headline = 'Welcome to the Contact page where to contact us';
         $logo = 'logo_php.png';
         break;
     case 'login.php':
         $title = "Login page of final project website";
         $body='login inner';
-        $headline = 'Sign in to IT261 Website';
+        $headline = 'Sign in to the website';
         $logo = 'logo_php.png';
         break;
     case 'logout.php':
         $title = "Logout page of final project website";
         $body='logout inner';
-        $headline = 'Sign out of IT261 Website';
+        $headline = 'Sign out of the website.';
         $logo = 'logo_php.png';
         break;
     case 'members.php':
-        $title = "Members page of our IT261 Website";
+        $title = "Members page of final project website";
         $body='member inner';
-        $headline = 'Welcome to Register New Member';
+        $headline = 'Welcome to the member page where to register new member';
         $logo = 'logo_php.png';
         break;
     case 'member-view.php';
-        $title = "Members page of our IT261 Website";
+        $title = "Members page of final project website";
         $body='member-view inner';
-        $headline = 'Member View of IT261 Website';
+        $headline = 'Welcome to the member view page where to show member\'s detail information';
         $logo = 'logo_php.png';
         break;
     default:
         $title = "Home page of final project website";
         $body='home';
-        $headline = 'Welcome to our Home page of our IT261 Website';
+        $headline = 'Welcome to the Home page';
         $logo = 'logo_php.png';
         break;
 }
