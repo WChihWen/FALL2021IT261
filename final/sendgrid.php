@@ -81,4 +81,5 @@ try {
     echo 'Caught exception: '. $e->getMessage() ."\n";
 }
 
+echo SGKEY.'xeff';
 ?>
