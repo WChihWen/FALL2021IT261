@@ -20,15 +20,16 @@
                 if (isset($_GET["to"])){
                     $to =$_GET["to"];                
                 }
-                 echo '
-                 <br><br><br><br>  
-                 Hello, <b>' .$first_name. '</b> <br>
-                 Thanks for contacting us.
-                 This email was sent to <b>'.$to.'</b> successfully! <br><br> 
-                 Click <a href="index.php">here,</a> to go to home page.
-                 <br><br><br><br><br><br>                     
-                 ';
-            
+                echo '<div class="center">';
+                echo '                 
+                <br><br><br><br>  
+                Hello, <b>' .$first_name. '</b> <br>
+                Thanks for contacting us.
+                This email was sent to <b>'.$to.'</b> successfully! <br><br> 
+                Click <a href="index.php">here,</a> to go to home page.
+                <br><br><br><br><br><br>                     
+                ';
+                echo '</div>';
             ?>
          </article>
          <aside class="links">     

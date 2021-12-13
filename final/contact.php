@@ -137,13 +137,13 @@
          $from = 'Chih.W.Wang@seattlecolleges.edu';
          $from_name = 'CW';
          $body ='
-               The first name is: '. $first_name .' <br>'.PHP_EOL.'
-               The last name is: '. $last_name .' <br>'.PHP_EOL.'
-               Email: '.$email.' <br>'.PHP_EOL.'
-               Phone: '.$phone.' <br>'.PHP_EOL.'
-               Computer Languages: '.my_langs($my_langs,$langs).' <br>'.PHP_EOL.'       
-               Browser: '. $my_browser[$browser] .' <br>'.PHP_EOL.'                         
-               Comments: '.$comments .' '.PHP_EOL.'      
+               <b>The first name is:</b> '. $first_name .' <br>'.PHP_EOL.'
+               <b>The last name is:</b> '. $last_name .' <br>'.PHP_EOL.'
+               <b>Email:</b> '.$email.' <br>'.PHP_EOL.'
+               <b>Phone:</b> '.$phone.' <br>'.PHP_EOL.'
+               <b>Computer Languages:</b> '.my_langs($my_langs,$langs).' <br>'.PHP_EOL.'       
+               <b>Browser:</b> '. $my_browser[$browser] .' <br>'.PHP_EOL.'                         
+               <b>Comments:</b> <br>'.$comments .' '.PHP_EOL.'      
          ';
 
 
