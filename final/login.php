@@ -52,7 +52,11 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
    }
 }
 ?>
+<script>  
+    $( function() {
 
+    });
+</script>
 <main <?php echo $bc ?>>
     <div class="container">
       <header class="header">
