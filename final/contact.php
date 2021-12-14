@@ -133,7 +133,7 @@
 
          //$to = $email;
          $to = 'szemeo@mystudentswa.com';
-         $subject = 'Emailable Form from Chih Wen\'s website, '.date('Y-m-d') ;   
+         $subject = 'Emailable Form from Chih Wen\'s final project, '.date('Y-m-d') ;   
          $from = 'Chih.W.Wang@seattlecolleges.edu';
          $from_name = 'CW';
          $body ='

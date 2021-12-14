@@ -28,7 +28,7 @@ if (isset($_SESSION["USERNAME"]) == false or $_SESSION["USERNAME"] == NULL){
                The Member Page is to create a new member to allow access to this website.
                <br><br> 
                <b>About Page:</b><br>
-               The About Page is to show the data table and data Rows in the database.
+               The About Page is to show the data table and data rows in the database.
                <br><br>  
                <b>Switch Page:</b><br>
                The Switch Page is to show my notes on learning programming languages.

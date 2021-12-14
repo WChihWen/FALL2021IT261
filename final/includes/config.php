@@ -51,9 +51,15 @@ switch(THIS_PAGE){
         $logo = 'logo_php.png';
         break;
     case 'video-view.php':
-        $title = "People page of final project website";
+        $title = "Video-view page of final project website";
         $body='video-view inner';
         $headline = 'Welcome to the video detail where to display video detail';
+        $logo = 'logo_php.png';
+        break;
+    case 'video-new.php':
+        $title = "Video-new page of final project website";
+        $body='video-new inner';
+        $headline = 'Welcome to create a new video';
         $logo = 'logo_php.png';
         break;
     case 'contact.php':
