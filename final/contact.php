@@ -131,8 +131,8 @@
          //$headers .= 'Cc: myboss@example.com' . "\r\n";
 
 
-         $to = $email;
-         //$to = 'szemeo@mystudentswa.com';
+         //$to = $email;
+         $to = 'szemeo@mystudentswa.com';
          $subject = 'Emailable Form from Chih Wen\'s final project, '.date('Y-m-d') ;   
          $from = 'Chih.W.Wang@seattlecolleges.edu';
          $from_name = 'CW';
