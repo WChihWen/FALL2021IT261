@@ -1,5 +1,6 @@
 
  <?php include 'includes/header.php';?>  
+ <?php include 'includes/js.php';?>  
  <?php 
 
     if (isset($_SESSION["USERNAME"]) == false or $_SESSION["USERNAME"] == NULL){     
