@@ -42,7 +42,7 @@ switch(THIS_PAGE){
         $title = "Switch page of final project website";
         $body='switch inner';
         $headline = 'Welcome to switch page notes of my learning';
-        $logo = 'logo_tv.png';
+        $logo = 'logo_php.png';
         break;
     case 'videos.php':
         $title = "videos page of final project website";
